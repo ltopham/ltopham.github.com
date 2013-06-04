@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="it-IT">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JAM Studio</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="css/media-queries.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="image_src" href="favicon.png">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/jquery.path.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="js/slides.min.jquery.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/form.init.js"></script>
+
+    <script>
+        var ua=navigator.userAgent.toLocaleLowerCase(),
+         regV = /ipod|ipad|iphone/gi,
+         result = ua.match(regV),
+         userScale="";
+        if(!result){
+         userScale=",user-scalable=0"
+        }
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
+    </script>
+    <script type="text/javascript" src="js/jquery.selectBox.js"></script>
+    
+</head>
+<body class="chapter_4 blog">
+<!--[if lte IE 7]>
+  <div style='background: #fff;clear: both; height: 45px; position: relative;z-index:10000'>
+    <a href="#"  onclick='javascript:this.parentNode.style.display="none"; return false;' style="display:block; position:relative; width:12px; height:12px; left:100%; margin:0 0 -17px -17px; padding:5px 5px 0 0; background:url(http://www.artnuvo33.com/images/close.gif) no-repeat 0 5px;"  title="Закрыть"></a>
+    <div style='width: 940px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden;'>
+      <div style='width: 45px; float: left; padding: 6px 0 0 0'><img src='img/ie6nomore-warning.jpg' alt='Внимание!'/></div>
+      <div style='width: 736px; float: left;'>
+        <div style='font: 15px/15px "DroidSerifBold";color:#990000;margin-top: 7px'>Attention! This page may not display correctly.</div>
+        <div style='font: 14px/14px "DroidSerif"; margin-top: 2px;color:#282828'>You are using an outdated version of Internet Explorer. For a faster, safer browsing experience.</div>
+      </div>
+      <div class='btn_ie_up'><a href='http://www.microsoft.com/rus/windows/internet-explorer/' target='_blank'><span></span></a></div>
+    </div>
+  </div>
+  <![endif]-->
+<div id="toTop"><span></span></div>
+<div id="wrapper">
+<!--==============================================bird================================================================-->
+    <a href="https://twitter.com/fanfbmltemplate" target="_blank" id="twitter">
+        <span id="wing" class="up"></span>
+        <div id="follow"></div>
+        <span id="killer"></span>
+    </a>
+    <div id="preloader"></div>
+    <div id="target"></div>
+<!--==============================================end bird============================================================-->
+<!--==============================================header==============================================================-->
+    <div id="header">
+	    <div class="container">
+            <div class="chimpchomplogo">
+                <div class="headerLogo"><a href="#chapter_1"><img src="img/logo.png"></a></div>
+            </div>
+            <span class="menu_act"></span>
+		    <ul id="menu">
+			    <li class="one"><a href="index.html#chapter_1" title="chapter_1">About</a></li>
+			    <li class="two"><a href="index.html#chapter_2" title="chapter_2">Work</a></li>
+			    <li class="three"><a href="index.html#chapter_3" title="chapter_3">Contact</a></li>
+			    <li class="four"><a href="index.html#chapter_4" title="chapter_4">Blog</a></li>
+		    </ul>
+            <select onchange="javascript:location.href=getElementById('navselect').options[getElementById('navselect').selectedIndex].value ;" id="navselect" name="navselect">
+                <option value="index.html#chapter_1" >About</option>
+                <option value="index.html#chapter_2" >Work</option>
+                <option value="index.html#chapter_3" >Contact</option>
+                <option value="index.html#chapter_4" selected>Blog</option>
+            </select>
+	    </div>
+    </div>
+<!--==============================================end header==========================================================-->
+<!--==============================================Blog Post===========================================================-->
+    <div class="section" id="chapter_4">
+	    <div class="columCentr">
+            <div class="topTitle">Blog</div>
+            <div class="contentBlog">
+                <div class="blogSingl">
+                    <div class="dateSingl">
+                        26<br><i>jun</i>
+                    </div>
+                    <h4>Analog</h4>
+                    <div id="slides" class="slides_singl">
+                        <div class="slides_container">
+                            <a href="javascript:void(0)" target="_blank"><img src="img/chapter-4/slide.jpg"></a>
+                            <a href="javascript:void(0)" target="_blank"><img src="img/chapter-4/slide-1.jpg"></a>
+                            <a href="javascript:void(0)" target="_blank"><img src="img/chapter-4/slide-2.jpg"></a>
+                        </div>
+                        <div class="prev2">
+                            <a href="javascript:void(0)"><b></b></a>
+                            <!-- <span>Bohema</span> -->
+                        </div>
+                        <div class="next2">
+                            <a href="javascript:void(0)"><b></b></a>
+                            <!-- <span>Street Lights</span> -->
+                        </div>
+                    </div>
+                    <div class="txt-BlogSingl">
+                        <p>
+                            Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh.</p><p>
+Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.</p><p>
+Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.
+                        </p>
+                        <div class="soc_blog" id="com_link">
+                            <div style="width: 130px;">
+                                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffanfbmltemplates.com/&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+                                <div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+                            </div>
+                            <div style="width: 90px;">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-via="fanfbmltemplate" data-dnt="true">Tweet</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </div>
+                            <div style="width: 50px;">
+                                <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffanfbmltemplates.com%2F&media=http%3A%2F%2Ffanfbmltemplates.com%2F" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+                            </div>
+                            <div>
+                                <g:plusone size="medium"></g:plusone>
+                                <script type="text/javascript">
+                                  (function() {
+                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                  })();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot-post-singl">
+                        Posted in <a href="javascript:void(0)">Showcase</a>,  by <a href="javascript:void(0)">admin</a>, <a href="javascript:void(0)">3</a> comments
+                        <span class="fr">Taged <a href="javascript:void(0)">illustration</a>, <a href="javascript:void(0)">abstract</a>, <a href="javascript:void(0)">design</a></span>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="people">
+                        <div class="ava"><img src="img/chapter-4/1.jpg" alt=""></div>
+                        <div class="people_txt">
+                            <i></i>
+                            <a class="reply">Reply</a>
+                            <h4><a href="javascript:void(0)">Sam Smith</a></h4>
+                            <div class="date_comm">May 2, 2012 at 7:44 pm</div>
+                            <p>
+                                Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                            </p>
+                        </div>
+                        <div class="people">
+                            <div class="ava"><img src="img/chapter-4/1.jpg" alt=""></div>
+                            <div class="people_txt">
+                                <i></i>
+                                <h4><a href="javascript:void(0)">Admin</a></h4>
+                                <div class="date_comm">May 2, 2012 at 7:44 pm</div>
+                                <p>
+                                    Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="ava"><img src="img/chapter-4/1.jpg" alt=""></div>
+                        <div class="people_txt">
+                            <i></i>
+                            <a class="reply">Reply</a>
+                            <h4><a href="javascript:void(0)">Linda Ford</a></h4>
+                            <div class="date_comm">May 2, 2012 at 7:44 pm</div>
+                            <p>
+                                Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBlog">
+                    <div class="top-cont">
+                        <div class="l"></div>
+                        <div class="r"></div>
+                        Leave a Reply
+                    </div>
+                    <form id="f1" action="send-form.php" method="post" class="ajax">
+                        <input type="hidden" name="do" value="send" />
+                        <div class="centr-cont">
+                            <div id="events"></div>
+                            <span>Your email address will not be published. Required fields are marked *</span>
+                            <div class="fl">
+                                <label class="name">
+                                    <div class="inp"><input type="text" value="Your Name*" onblur="if (this.value == '') this.value = 'Your Name*';" onfocus="if (this.value == 'Your Name*') this.value = '';" name="surname"></div>
+                                </label>
+
+                                <label class="email">
+                                    <div class="inp"><input type="text" value="Email*" onblur="if (this.value == '') this.value = 'Email*';" onfocus="if (this.value == 'Email*') this.value = '';" name="email"></div>
+                                </label>
+
+                                <label class="text">
+                                    <div class="inp"><input type="text" value="Subject" onblur="if (this.value == '') this.value = 'Subject';" onfocus="if (this.value == 'Subject') this.value = '';" name="website"></div>
+                                </label>
+                            </div>
+                            <label class="message">
+                                <div class="inp_txt">
+                                    <textarea cols="2" rows="2" onblur="if (this.value == '') this.value = 'Message';" onfocus="if (this.value == 'Message') this.value = '';" name="message">Message</textarea>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="bot-cont">
+                            <div class="l"></div>
+                            <div class="r"></div>
+                            <div id="if1"></div>
+                            <div class="b-subm"><input type="submit" id="send" value="" /></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cb"></div>
+            <div class="botMore2">
+                <a href="index.html#chapter_4"><span>Back TO Blog PAGE</span></a>
+            </div>
+<!--==============================================end Blog Post=======================================================-->
+<!--==============================================footer==============================================================-->
+            <div class="footer">
+                <div class="top">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="bg_fc">
+                    <div class="category">
+                        <span>Categories</span>
+                        <ul>
+                            <li><a href="javascript:void(0)">Illustration</a></li>
+                            <li><a href="javascript:void(0)">Motion</a></li>
+                            <li><a href="javascript:void(0)">Product</a></li>
+                            <li><a href="javascript:void(0)">Showcase</a></li>
+                            <li><a href="javascript:void(0)">Font</a></li>
+                            <li><a href="javascript:void(0)">Design</a></li>
+                            <li><a href="javascript:void(0)">Packaging</a></li>
+                            <li><a href="javascript:void(0)">Branding</a></li>
+                        </ul>
+                    </div>
+                    <div class="article">
+                        <span>Popular Articles</span>
+                        <ul>
+                            <li>
+                                <div class="date">24<br><i>jun</i></div>
+                                <a href="javascript:void(0)">Ut Tellus Dolor Dapibus Eget Elementum</a>
+                            </li>
+                            <li>
+                                <div class="date">18<br><i>APR</i></div>
+                                <a href="javascript:void(0)">Vestibulum Ante Ipsum Primis In</a>
+                            </li>
+                            <li>
+                                <div class="date">29<br><i>FEB</i></div>
+                                <a href="javascript:void(0)">Neque Porro Quisquam Est Qui Dolorem</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="last-tweet">
+                        <span>Latest Tweet</span>
+                        <div class="tweetBox">
+                            <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+                            <script>
+                            new TWTR.Widget({
+                              version: 2,
+                              type: 'profile',
+                              rpp: 1,
+                              interval: 30000,
+                              width: 'auto',
+                              height: 150,
+                              theme: {
+                                shell: {
+                                  background: '#101010',
+                                  color: '#ffffff'
+                                },
+                                tweets: {
+                                  background: '#101010',
+                                  color: '#a1a1a1',
+                                  links: '#cf4a30'
+                                }
+                              },
+                              features: {
+                                scrollbar: false,
+                                loop: false,
+                                live: true,
+                                behavior: 'all'
+                              }
+                            }).render().setUser('fanfbmltemplate').start();
+                            </script>
+                            <a href="http://twitter.com/fanfbmltemplate" target="_blank" class="bird">Follow Us On Twitter</a>
+                        </div>
+                    </div>
+                    <div class="category ll">
+                        <span>We Are Social</span>
+                        <ul>
+                            <li><a href="javascript:void(0)">Behance</a></li>
+                            <li><a href="javascript:void(0)">Dribbble</a></li>
+                            <li><a href="javascript:void(0)">Facebook</a></li>
+                            <li><a href="javascript:void(0)">Forrst</a></li>
+                            <li><a href="javascript:void(0)">Last.fm</a></li>
+                            <li><a href="javascript:void(0)">Pin it</a></li>
+                            <li><a href="javascript:void(0)">Twitter</a></li>
+                            <li><a href="javascript:void(0)">Vimeo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cb"></div>
+                <div class="bot">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="cb"></div>
+                <div class="copyright">
+                    &copy; 2012 JAM Studio. All rights reserved.
+                </div>
+            </div>
+<!--==============================================end footer==========================================================-->
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("body").queryLoader2({
+    	    percentage:true,
+    	    completeAnimation:'fade',
+            barColor:"#ffffff",
+    	    barHeight:0,
+    	    deepSearch:true,
+    	    onComplete: function() {
+    		    $("#wrapper").show();	
+    	    }
+        });
+    });
+    //$(window).load(function(){
+//        $('#contact-form').forms({
+//            ownerEmail:'yourlogin@yourmaildomain.com'
+//            })
+//        })
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+</body>
+</html>
