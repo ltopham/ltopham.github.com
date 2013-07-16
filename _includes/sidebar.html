@@ -1,0 +1,82 @@
+<!-- Widget
+================================================== -->
+<div class="four columns">
+
+	<!-- Search -->
+	<div class="widget first">
+		<div class="headline no-margin"><h4>Search</h4></div>
+		<div class="search">
+			<input type="text" onblur="if(this.value=='')this.value='';" onfocus="if(this.value=='')this.value='';" value="" class="text"/>
+		</div>
+	</div>
+	
+	<!-- Categories -->
+	<div class="widget">
+		<div class="headline no-margin"><h4>Categories</h4></div>
+			<ul class="links-list-alt">
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">Motion Graphic</a></li>
+				<li><a href="#">WordPress</a></li>
+				<li><a href="#">Video Gallery</a></li>
+				<li><a href="#">Technology</a></li>
+			</ul>
+	</div>
+	
+	<!-- Tags -->
+	<div class="widget">
+		<div class="headline no-margin"><h4>Tags</h4></div>
+		<div class="tags">
+			<a href="#">Photography</a>
+			<a href="#">Motion Graphics</a>
+			<a href="#">Java Script</a>
+			<a href="#">Video Gallery</a>
+			<a href="#">Blog</a>
+			<a href="#">WordPress</a>
+			<a href="#">Business</a>
+		</div>
+	</div>
+	
+	<!-- Popular Posts -->
+	<div class="widget">
+		<div class="headline no-margin"><h4>Popular Posts</h4></div>
+		
+		<div class="latest-post-blog">
+			<a href="#"><img src="images/popular-post-01.png" alt="" /></a>
+			<p><a href="#">Maecenas metus lorem nulla, pretium lipsum.</a> <span>12 August 2012</span></p>
+		</div>
+	
+		<div class="latest-post-blog">
+			<a href="#"><img src="images/popular-post-02.png" alt="" /></a>
+			<p><a href="#">Tetus lorem maecenas facili lipsum pretium.</a> <span>26 July 2012</span></p>
+		</div>
+			
+		<div class="latest-post-blog">
+			<a href="#"><img src="images/popular-post-03.png" alt="" /></a>
+			<p><a href="#">Lorem pretium metusnula lorem ipsum dolor.</a> <span>16 June 2012</span></p>
+		</div>
+
+	</div>
+	
+	<!-- Twitter -->
+	<div class="widget">
+		<div class="headline no-margin"><h4>Latest Tweets</h4></div>
+		<ul id="twitter-blog"></ul>
+			<script type="text/javascript">
+				jQuery(document).ready(function($){
+				$.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Vasterad&count=2'), function(tweets){
+					$("#twitter-blog").html(tz_format_twitter(tweets));
+				}); });
+			</script>
+		<div class="clear"></div>
+	</div>
+		
+	<!-- Flickr -->
+	<div class="widget">
+		<div class="headline no-margin"><h4>Photo Stream</h4></div>
+		<div class="flickr-widget-blog">
+			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=36587311@N08"></script>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+</div>
