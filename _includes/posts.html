@@ -1,0 +1,49 @@
+<!-- 960 Container -->
+<div class="container">
+
+	<div class="sixteen columns">
+	
+		<!-- Page Title -->
+		<div id="page-title">
+			<h2>The Blog <span></span></h2>
+			<div id="bolded-line"></div>
+		</div>
+		<!-- Page Title / End -->
+
+	</div>
+</div>
+<!-- 960 Container / End -->
+
+
+<!-- Blog Posts
+================================================== -->
+<!-- 960 Container -->
+{% for post in site.posts offset: 0 limit: 10 %}
+
+
+<div class="twelve columns">
+	
+	<!-- Post -->
+	<div class="post">
+		<!-- <div class="post-img picture"><a href="blog_post.html"><img src="images/blog-img-01.jpg" alt="" /><div class="image-overlay-link"></div></a></div> -->
+		<a href="#" class="post-icon standard"></a>
+		<div class="post-content">
+			<div class="post-title"><h2><a href="blog_post.html">{{ post.title }}</a></h2></div>
+			<div class="post-meta"><span><i class="mini-ico-calendar"></i>{{ post.date | date: "%B %e, %Y" }}</span> <span><i class="mini-ico-user"></i>By <a href="#">admin</a></span>   	<!-- <span><i class="mini-ico-comment"></i>With <a href="#">12 Comments</a></span></div> -->
+			<div class="post-description">
+				<p>{{ post.content }}</p>
+			</div>
+			<!-- <a class="post-entry" href="blog_post.html">Continue Reading</a> -->
+		</div>
+	</div>
+{% endfor %}
+	
+<!--	<ul class="pagination">
+		<a href="#"><li class="current">1</li></a>
+		<a href="#"><li>2</li></a>
+		<a href="#"><li>3</li></a>
+		<a href="#"><li>4</li></a>
+		<a href="#"><li>5</li></a>
+	</ul> -->
+	
+</div>
